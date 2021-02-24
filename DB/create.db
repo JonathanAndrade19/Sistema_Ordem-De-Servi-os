@@ -1,0 +1,21 @@
+CREATE DATABASE Control;
+USE Control;
+
+CREATE TABLE `Tb_Servico` (
+  `id` int(11) NOT NULL auto_increment,
+  `descricao` varchar(220) NOT NULL,
+  `valor` varchar(220) NOT NULL,
+	PRIMARY KEY (`id`)
+) ENGINE=InnoDB default charset=utf8;
+
+CREATE TABLE `Tb_OrdemServico` (
+  `id` int(11) NOT NULL auto_increment,
+  `servico` varchar(220) not null,
+  `quantidade` DECIMAL(10,2) not null,
+  `nomeFuncionario` text not null,
+  `data` date not null,
+  `horaInicio` time not null,
+  `horaFim` time not null,
+  `detalhe` text,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB default charset=utf8;
