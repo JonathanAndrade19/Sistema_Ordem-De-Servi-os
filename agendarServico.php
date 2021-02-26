@@ -1,5 +1,5 @@
 <?php
-
+    session_start();
     require_once('components/conexao.php');
 
     $descricao = $_POST['descricao'];
@@ -13,11 +13,11 @@
 
     // executar a query
     if(mysqli_query($link, $sqlinsert)){
-        echo 'Agendamento Realizado com Suesso!';
-        header('Location: '.'index.php');
+        $_SESSION['msg'] = "<p>Serviço Cadastrado com sucesso</p>";
+        header('Location: servicos.php');
     }else{
-        echo 'Erro ao Agenda';
-        header('Location: '.'index.php');
+        $_SESSION['msg'] = "<p>Erro, Serviço não cadastrado</p>";
+        header('Location: servicos.php');
     }
 
 ?>

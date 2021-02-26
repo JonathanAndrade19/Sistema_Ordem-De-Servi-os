@@ -16,11 +16,11 @@
     $resultEdite = mysqli_query($link, $sqlinsert);
 
     if(mysqli_affected_rows($link)){
-        $_SESSION['msg'] = "<p style='color:green;'> Usuario editado com Sucesso! </p>";
+        // $_SESSION['msg'] = "<p style='color:green;'> Usuario editado com Sucesso! </p>";
         header("Location: listarServicos.php");
     }
     else{
-        $_SESSION['msg'] = "<p style='color:red;'> Erro Ao editar Usuario! </p>";
+        // $_SESSION['msg'] = "<p style='color:red;'> Erro Ao editar Usuario! </p>";
         header("Location: editarListarServico.php?id=$id");
     }
 

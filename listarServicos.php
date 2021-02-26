@@ -34,7 +34,7 @@
         <div class="row">
             <div class="centralizarItem">
                 <a class="btn btn-success" href="editarListarServico.php?id=<?php echo $dados['id']; ?>">Editar</a>
-                <a class="btn btn-danger" href="deletarAgendamento.php?id=<?php echo $dados['id']; ?>">Deletar</a>
+                <a class="btn btn-danger" href="deletarServico.php?id=<?php echo $dados['id']; ?>">Deletar</a>
             </div>
         </div>
     </div>
