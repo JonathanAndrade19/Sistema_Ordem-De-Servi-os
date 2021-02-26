@@ -9,7 +9,8 @@
     $link = $objDb->conecta_mysql();
     
     //Criando Query de inserção de dados.
-    $sqlinsert = " insert into Tb_Servico ( descricao, valor) values ('$descricao','$valor') ";
+    $sqlinsert = " insert into Tb_OrdemServico ( servico, quantidade, nomeFuncionario, data, horaInicio, horaFim, detalhe) 
+        values ('$descricao','$valor') ";
 
     // executar a query
     if(mysqli_query($link, $sqlinsert)){

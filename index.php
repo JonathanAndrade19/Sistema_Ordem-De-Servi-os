@@ -15,8 +15,8 @@
     <div class="campoCentral">
       <img src="src/img/logoControl.png" alt="logo">
         <div class="campoButton">
-          <a href="servicos.php" id="button">Serviços</a>
-          <a href="ordemServico.php" id="button">Ordem de Serviços</a>
+          <a href="servicos.php" class="btn btn-primary">Serviços</a>
+          <a href="ordemServico.php" class="btn btn-primary">Ordem de Serviços</a>
         </div>
     </div>
 </body>

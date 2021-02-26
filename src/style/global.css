@@ -52,7 +52,7 @@ a {
 .campoButton > button{
     margin-top: 1rem;
 }
-#button{
+/* #button{
     background: #007bff;
     color: #fff;
     opacity: 0.8;
@@ -76,4 +76,4 @@ a {
     background: #fff;
     color: #007bff;
     border: 1px solid #007bff;
-}
+} */

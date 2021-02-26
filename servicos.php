@@ -29,10 +29,13 @@
           <input type="text" class="form-control" id="valor" name="valor" placeholder="00,00" required="requiored">
         </div>
 
-        <div>
-            <button type="submit" class="agendar">AGENDAR</button>
+        <div style="text-align: center;">
+            <button type="submit" class="btn btn-primary">AGENDAR</button>
         </div>
-        <div style="margin-top: 50px;text-align: center;">
+        <div style="text-align: center;">
+            <a href="listarServicos.php" class="btn btn-primary">Listar Serviços</a>
+        </div>
+        <div style="text-align: center;">
             <a class="voltar" href="index.php">VOLTAR</a>
         </div>
       </form>
