@@ -67,7 +67,7 @@
               <button id="" type="submit" class="btn btn-primary">AGENDAR</button>
           </div>
           <div style="text-align: center;">
-              <a href="#" class="btn btn-primary">Listar Ordem de Serviços</a>
+              <a href="listarOrdem.php" class="btn btn-primary">Listar Ordem de Serviços</a>
           </div>
           <div style="text-align: center;">
               <a class="voltar" href="index.php">VOLTAR</a>

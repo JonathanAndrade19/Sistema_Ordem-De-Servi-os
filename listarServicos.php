@@ -26,7 +26,7 @@
     <div class="campoListagem" id="campoListagem">
         <div class="row">
             <div class="col-6">
-                <p>Id: <?php echo $dados['id']; ?></p>
+                <p hidden>Id: <?php echo $dados['id']; ?></p>
                 <p>Descrição: <?php echo $dados['descricao']; ?></p>
                 <p>Valor: <?php echo $dados['valor']; ?></p>
             </div>
