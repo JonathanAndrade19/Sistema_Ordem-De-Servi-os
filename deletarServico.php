@@ -12,11 +12,17 @@
     $deletarAgenda = mysqli_fetch_assoc($deletarAgendamento);
 
     if(mysqli_affected_rows($link)){
-        // $_SESSION['msg'] = "<p style='color:green;'> Serviço Deletado com Sucesso! </p>";
+        $_SESSION['msg'] = "<div class='alert alert-success alert-dismissible fade show' role='alert'>
+        Serviço deletado com <strong>Sucesso!</strong>
+        <button type='button' class='btn-close alert-success' data-bs-dismiss='alert' aria-label='Close'>X</button>
+        </div>";
         header("Location: listarServicos.php");
     }
     else{
-        // $_SESSION['msg'] = "<p style='color:red;'> Erro Ao Deletar Serviço! </p>";
+        $_SESSION['msg'] = "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+        <strong>Erro</strong> ao deletar o Serviço
+        <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+        </div>";
         header("Location: listarServicos.php");
     }
 

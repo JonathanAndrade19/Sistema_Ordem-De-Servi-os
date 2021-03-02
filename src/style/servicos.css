@@ -1,31 +1,4 @@
-/* .agendar{
-    background: #007bff;
-    color: #fff;
-    opacity: 0.8;
-
-    font-size: 12px;
-    font-weight: 800;
-    letter-spacing: 0.4px;
-    text-transform: uppercase;
-    align-items: center;
-    text-align: center;
-
-    padding: 12px 35%;
-    border-radius: 5px;
-    border: none;
-    outline: 0;
-    cursor: pointer;
-    margin: 0.2rem;
-    width: 100%;
-}
-
-
-.agendar:hover{
-    background: #fff;
-    color: #007bff;
-    border: 1px solid #007bff;
-} */
-
 .descricao{
     margin-top: 4rem;
 }
+    

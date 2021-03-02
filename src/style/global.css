@@ -28,7 +28,6 @@ a {
     text-decoration: none !important;
     font-family: 'Maven Pro', sans-serif;   
 }
-
 .campoCentral{
     height: 100vh;
     max-width: 992px;
@@ -52,28 +51,3 @@ a {
 .campoButton > button{
     margin-top: 1rem;
 }
-/* #button{
-    background: #007bff;
-    color: #fff;
-    opacity: 0.8;
-
-    font-size: 12px;
-    font-weight: 800;
-    letter-spacing: 0.4px;
-    text-transform: uppercase;
-    align-items: center;
-    text-align: center;
-
-    padding: 12px 25px;
-    border-radius: 5px;
-    border: none;
-    outline: 0;
-    cursor: pointer;
-    margin: 0.2rem;
-}
-
-#button:hover{
-    background: #fff;
-    color: #007bff;
-    border: 1px solid #007bff;
-} */

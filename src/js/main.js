@@ -7,3 +7,6 @@
 //       });
 //     });
 //   });
+// $('.botao').click(function(){
+//     alert('isso e um teste');
+// });

@@ -19,10 +19,16 @@
 
     // executar a query
     if(mysqli_query($link, $sqlinsert)){
-        echo 'Agendamento Realizado com Suesso!';
+        $_SESSION['msg'] = "<div class='alert alert-success alert-dismissible fade show' role='alert'>
+        Ordem de Serviço cadastrado com <strong>Sucesso!</strong>
+        <button type='button' class='btn-close alert-success' data-bs-dismiss='alert' aria-label='Close'>X</button>
+        </div>";
         header('Location: ordemServico.php');
     }else{
-        echo 'Erro ao Agenda';
+        $_SESSION['msg'] = "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+        Erro ao Cadastar Ordem de Serviço!
+        <button type='button' class='btn-close alert-success' data-bs-dismiss='alert' aria-label='Close'>X</button>
+        </div>";
         header('Location: ordemServico.php');
     }
 

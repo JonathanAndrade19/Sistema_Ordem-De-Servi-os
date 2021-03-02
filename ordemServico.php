@@ -1,3 +1,14 @@
+<?php 
+session_start();
+require_once('components/conexao.php');
+
+$objDb = new db();
+$link = $objDb->conecta_mysql();
+
+$consulta = "SELECT * FROM Tb_Servico";
+$consultaAgenda = mysqli_query($link, $consulta);
+
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -15,14 +26,25 @@
       <img src="src/img/logoControl.png" alt="logo">
        
       <form method="post" action="agendarOrdem.php">
+          <!-- MSG de cadastrado com sucesso! -->
+          <?php if(isset($_SESSION['msg'])): ?>
+            <div>
+                <?php
+                    echo $_SESSION['msg'];
+                    unset($_SESSION['msg']);
+                ?>
+            </div>
+          <?php endif;?>
 
-          <div class="form-group descricao">
+          <div class="form-group">
             <label class="form-label">Serviço: </label>
-            <input class="form-control" rows="3" class="form-control"
-            id="servico" name="servico" placeholder="informe o serviço" required="requiored"></input>
-            <span style="font-size: 12px; color: #888;"> *Serviço executado na ordem de serviço</span>
+            <select class="form-control" name="servico" class="form-select" aria-label="Default select example">
+              <?php while($dados = mysqli_fetch_assoc($consultaAgenda)): ?>
+                <option><?php echo $dados['descricao']; ?></option>
+              <?php endwhile;?>
+            </select>
           </div>
-
+          
           <div class="form-group">
             <label class="form-label">Quantidade: </label>
             <input type="number" class="form-control" id="quantidade" name="quantidade" 
@@ -64,12 +86,12 @@
 
           <!-- Opção -->
           <div style="text-align: center;">
-              <button id="" type="submit" class="btn btn-primary">AGENDAR</button>
+              <button id="" type="submit" class="btn btn-primary">CADASTAR</button>
           </div>
-          <div style="text-align: center;">
-              <a href="listarOrdem.php" class="btn btn-primary">Listar Ordem de Serviços</a>
+          <div style="text-align: center; margin-top: 1rem;">
+              <a href="listarOrdem.php" class="btn btn-primary">LISTAR ORDEM DE SERVIÇOS</a>
           </div>
-          <div style="text-align: center;">
+          <div style="text-align: center; margin: 1rem;">
               <a class="voltar" href="index.php">VOLTAR</a>
           </div>
       </form>
@@ -77,7 +99,7 @@
     </div>
 
     <script src="src/js/main.js"></script>
-    <script src="src/js/notify.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 </body>
 </html>

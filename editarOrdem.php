@@ -23,11 +23,17 @@
     $resultEdite = mysqli_query($link, $sqlinsert);
 
     if(mysqli_affected_rows($link)){
-        // $_SESSION['msg'] = "<p style='color:green;'> Usuario editado com Sucesso! </p>";
+        $_SESSION['msg'] = "<div class='alert alert-success alert-dismissible fade show' role='alert'>
+        Ordem de Serviço Editada com <strong>Sucesso!</strong>
+        <button type='button' class='btn-close alert-success' data-bs-dismiss='alert' aria-label='Close'>X</button>
+        </div>";
         header("Location: listarOrdem.php");
     }
     else{
-        // $_SESSION['msg'] = "<p style='color:red;'> Erro Ao editar Usuario! </p>";
+        $_SESSION['msg'] = "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+        <strong>Erro</strong> ao deletar o Ordem de Serviço
+        <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+        </div>";
         header("Location: listarOrdem.php?id=$id");
     }
 
