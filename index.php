@@ -14,7 +14,7 @@
 </head>
 <body>
     <div class="campoCentral">
-      <img src="src/img/logoControl.png" alt="logo">
+      <img style="width: 30rem;margin-bottom: -6rem;" src="src/img/logo-social.png" alt="logo">
         <div class="campoButton">
           <a id="buttonServico" href="servicos.php" class="btn btn-primary">Serviços</a>
           <a id="buttonIndex" href="ordemServico.php" class="btn btn-primary">Ordem de Serviços</a>

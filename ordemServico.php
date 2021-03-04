@@ -23,7 +23,7 @@ $consultaAgenda = mysqli_query($link, $consulta);
 </head>
 <body>
     <div class="campoCentral">
-      <img src="src/img/logoControl.png" alt="logo">
+    <img style="width: 30rem;" src="src/img/logo-social.png" alt="logo">
        
       <form method="post" action="agendarOrdem.php">
           <!-- MSG de cadastrado com sucesso! -->

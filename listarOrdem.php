@@ -26,7 +26,7 @@
 <body>
     <div class="container">
         <div style="display: flex; align-items: center; flex-direction: column; margin-top:4rem;">
-            <img src="src/img/logoControl.png" alt="logo">
+            <img style="width: 30rem;" src="src/img/logo-social.png" alt="logo">
         </div>
 		<!-- MSG de cadastrado com sucesso! -->
         <?php if(isset($_SESSION['msg'])): ?>

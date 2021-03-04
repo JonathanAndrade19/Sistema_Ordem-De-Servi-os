@@ -26,7 +26,7 @@
 </head>
 <body>
 	<div class="campoCentral" style="padding: 4rem 2rem;">
-        <img style="margin-bottom:1rem;" src="src/img/logoControl.png" alt="logo">
+        <img style="width: 30rem;" src="src/img/logo-social.png" alt="logo">
 		<form method="post" action="editarOrdem.php">
             <input type="hidden" name="id" value="<?php echo $editar['id']; ?>">
             <?php $data = $editar['data'] ?>

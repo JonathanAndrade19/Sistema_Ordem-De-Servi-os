@@ -24,7 +24,7 @@
 </head>
 <body>
 <div class="campoCentral">
-    <img style="margin-bottom: 1rem;" src="src/img/logoControl.png" alt="logo">
+    <img style="width: 30rem;" src="src/img/logo-social.png" alt="logo">
      <!-- MSG de cadastrado com sucesso! -->
      <?php if(isset($_SESSION['msg'])): ?>
         <div>

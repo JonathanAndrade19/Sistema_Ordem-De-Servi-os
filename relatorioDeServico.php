@@ -32,7 +32,7 @@ $consultaAgenda = mysqli_query($link, $consulta);
   </head>
   <body>
     <div class="campoCentral">
-        <img src="src/img/logoControl.png" alt="logo">
+        <img style="width: 30rem;margin-top:-100px;" src="src/img/logo-social.png" alt="logo">
         <h2>Relatório de Serviços</h2>
         
         <div class="container">
