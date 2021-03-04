@@ -1,4 +1,3 @@
-# Desafio Control
 ### Tecnologias usadas -> 
 * Html5
 * Css3
