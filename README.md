@@ -32,16 +32,28 @@
 * Tela Inicial
 ![Tela Inicial](https://github.com/JonathanAndrade19/Sistema_Ordem-De-Servi-os/blob/main/src/img/TelaInicial.png)
 
+
+
 * Tela de Cadastro de Serviços -> 
+
 ![Tela de Cadastro de Serviços](https://github.com/JonathanAndrade19/Sistema_Ordem-De-Servi-os/blob/main/src/img/TelaCadastroServico.png)
 
+
+
 * Tela de Editar de Serviços -> 
+
 ![Tela de Editar Serviços](https://github.com/JonathanAndrade19/Sistema_Ordem-De-Servi-os/blob/main/src/img/TelaEditarServico.png)
 
+
+
 * Tela de Listagem de Serviços -> 
+
 ![Tela de Listagem de Serviços](https://github.com/JonathanAndrade19/Sistema_Ordem-De-Servi-os/blob/main/src/img/TelaListagemServico.png)
 
+
+
 * Tela de Cadastro de Ordem de Serviços -> 
+
 ![Tela de Cadastro de Ordem de Serviços](https://github.com/JonathanAndrade19/Sistema_Ordem-De-Servi-os/blob/main/src/img/TelaOrdemServico.png)
 
 
